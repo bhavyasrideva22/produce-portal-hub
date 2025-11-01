@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="64" cy="64" r="60" fill="url(#bgGradient)"/>
+  
+  <!-- Stem -->
+  <path d="M 64 90 L 64 45" stroke="#16a34a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Left leaf (larger) -->
+  <ellipse cx="52" cy="42" rx="15" ry="22" fill="url(#leafGradient1)" transform="rotate(-35 52 42)"/>
+  <path d="M 52 42 Q 45 35 42 42 Q 45 50 52 42" fill="#15803d" opacity="0.3"/>
+  
+  <!-- Right leaf (larger) -->
+  <ellipse cx="76" cy="42" rx="15" ry="22" fill="url(#leafGradient2)" transform="rotate(35 76 42)"/>
+  <path d="M 76 42 Q 83 35 86 42 Q 83 50 76 42" fill="#16a34a" opacity="0.3"/>
+  
+  <!-- Top center leaf (smaller) -->
+  <ellipse cx="64" cy="30" rx="10" ry="15" fill="url(#leafGradient1)" opacity="0.9"/>
+  <path d="M 64 30 Q 60 25 58 30 Q 60 35 64 30" fill="#16a34a" opacity="0.4"/>
+</svg>
